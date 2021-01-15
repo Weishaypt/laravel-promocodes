@@ -24,7 +24,7 @@ class Promocode extends Model
      *
      * @var array
      */
-    protected $fillable = ['code', 'reward', 'is_disposable', 'expires_at', 'quantity'];
+    protected $fillable = ['code', 'reward', 'is_disposable', 'expires_at', 'quantity', 'owner_id'];
 
     /**
      * The attributes that should be cast to native types.

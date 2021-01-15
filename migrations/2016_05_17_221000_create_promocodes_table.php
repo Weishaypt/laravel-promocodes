@@ -14,6 +14,7 @@ class CreatePromocodesTable extends Migration
     {
         Schema::create('promocodes', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedBigInteger('owner_id');
 
             $table->string('code', 32)->unique();
             $table->double('reward', 10, 2)->nullable();
